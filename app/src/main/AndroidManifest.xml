@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.panghaha.it.mymusicplayerdemo">
+
+    <!-- 读写 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yutong1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="Android:icon, android:theme">
+        <activity android:name=".UI.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".UI.Musiclist"/>
+        <activity android:name=".UI.tantan1"/>
+        <activity android:name=".UI.MusicPlayActivity"/>
+        <activity android:name=".UI.WDActivity"/>
+        <activity android:name=".UI.MusicPlayActivity2"/>
+        <activity android:name=".UI.MusicPlayActivity3"/>
+        <activity android:name=".UI.MusicPlayActivityYTFM"/>
+        <activity android:name=".UI.YTFM"/>
+        <activity android:name=".UI.OFOActivity"/>
+        <activity android:name=".UI.MobikeDemo"/>
+        <activity android:name=".UI.Aboutme"/>
+        <activity android:name=".UI.LuoXS"/>
+        <activity android:name=".UI.JianLiActivity"/>
+        <activity android:name=".UI.FriendActivty"/>
+        <activity android:name=".UI.ILikeMusic"/>
+        <activity android:name=".UI.FishActivity"/>
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="false"
+            />
+
+        <service
+            android:name=".service.MusicService2"
+            android:enabled="true"
+            android:exported="false"
+            />
+    </application>
+
+</manifest>
